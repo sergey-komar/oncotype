@@ -1,0 +1,83 @@
+.video-slider{
+    margin-bottom: 60px;
+}
+.video-slider .slick-prev,
+.video-slider .slick-next,
+.reviews-slider .slick-prev,
+.reviews-slider .slick-next{
+    padding: 0;
+    font-size: 0;
+    border: none;
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    top: -50px;
+    z-index: 2;
+}
+.video-slider .slick-prev,
+.reviews-slider .slick-prev{
+    background: url('../images/home/slider-arrow-left.png') no-repeat;
+    right: 51%;
+}
+.video-slider .slick-next,
+.reviews-slider .slick-next{
+    background: url('../images/home/slider-arrow-right.png') no-repeat;
+    left: 51%;  
+}
+
+
+
+
+
+// одинаковая высота слайдов
+.reviews-slider .slick-track{
+    display: flex;
+}
+.slick-slide{
+    height:auto;
+    flex:0 0 auto;
+}
+.slick-slide > div,
+.reviews-slider__wrapper,
+.reviews-slider__item{
+    height: 100%;
+}
+// одинаковая высота слайдов
+.reviews {
+    padding: 12rem 0;
+    background: url('../images/home/page-bg.jpg') no-repeat;
+    background-size: cover;
+}
+.reviews__title {
+    max-width: 70rem;
+}
+.reviews__title.title h3::after{
+    right: 180px;
+}
+.reviews-slider {
+    margin-top: 4rem;
+}
+
+.reviews-slider__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+}
+.reviews-slider__item-img img{
+    margin: 0 auto 10px auto;
+    border-radius: 30px;
+}
+.reviews-slider__item-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+.reviews-slider__item-title {
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}

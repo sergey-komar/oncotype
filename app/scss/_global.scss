@@ -5,8 +5,13 @@ body {
 	flex-direction: column;/*sticky footer*/
 	margin: 0;
 	scroll-behavior: smooth;
-	font-family: '';
+	font-family: 'Montserrat';
 	font-weight: 400;
+	color: #000;
+	font-size: 16px;
+	line-height: 1.4;
+	background: url('../images/home/bg.jpg') no-repeat;
+	background-size: cover;
  }
 html{
 	font-size: 10px;
@@ -22,8 +27,80 @@ button{
 	cursor: pointer;
 }
 .container{
-	max-width: 137rem;
+	max-width: 1310px;
 	margin: 0 auto;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container-video,
+.container-reviews{
+	max-width: 1680px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+a,
+button,
+.btn{
+	transition: all .4s ease-in;
+}
+a:hover,
+button:hover,
+.btn:hover{
+	transition: all .4s ease-in;
+}
+.btn{
+	display: block;
+	width: 100%;
+	border-radius: 20px;
+	text-align: center;
+	background-color:  #f3e825;
+	background: #f3e825;
+	border: none;
+}
+.btn:hover{
+	background: #2f4d95;
+	color: #fff;
+}
+.button{
+	display: block;
+	width: 100%;
+	text-align: center;
+	border-radius: 30px;
+	background: #2f4d95;
+	border: none;
+	color: #fff;
+}
+.button:hover{
+	background: #f3e825;
+	color: #000;
+}
+.title{
+	text-align: center;
+	margin: 0 auto;
+}
+.title h3{
+	display: inline-block;
+	margin: 0 auto 65px auto;
+	position: relative;
+	font-size: 4.8rem;
+	line-height: 1.2;
+	text-align: center;
+	font-weight: 600;
+	color: #2f4d95;
+}
+.title h3::after{
+	position: absolute;
+	content: '';
+	width: 350px;
+	height: 35px;
+	bottom: -25px;
+	right: -20px;
+	background: url('../images/home/about-line.png') no-repeat;
+}
+.subtitle{
+	margin: 0 auto 24px auto;
+	font-size: 3.2rem;
+	font-weight: 500;
+	text-align: center;
 }
