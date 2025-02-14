@@ -2,14 +2,60 @@ $(function () {
     $(".video-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        
+        responsive: [
+            {
+              breakpoint: 968,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+              }
+            },
+           
+          ]
       });
 
 
     $(".reviews-slider").slick({
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        
+        responsive: [
+          {
+            breakpoint: 1450,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+          {
+            breakpoint: 1150,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 870,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+         
+        ]
       });
 
     $('.questions-accardion__btn').on('click', function(){
@@ -21,11 +67,38 @@ $(function () {
 
 
     window.addEventListener('DOMContentLoaded', () => {
+
+
+            const menu = document.querySelector('.menu');
+            const mobile = document.querySelector('.nav-icon');
+
+            mobile.addEventListener('click', function(){
+                this.classList.toggle('nav-icon--active');
+                menu.classList.toggle('nav--active');
+
+            });
+            //Находим ссылки внутри мобильной навигации
+            const navLinks = document.querySelectorAll('.menu__list a');
+
+            //Обходим ссылки методом forEach
+            navLinks.forEach(function (item) {
+              //Для каждой ссылки добавляем прослушку по событию "Клик"
+              item.addEventListener('click', function () {
+                mobile.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
+                menu.classList.remove('nav--active'); // Убираем активный класс у блока моб. навигации
+            
+              });
+            });
+
+
+
           const questionsBtn = document.querySelectorAll('.questions-accardion__btn');
 
           questionsBtn.forEach(item => {
-            item.classList.toggle('open')
-          });
+            item.addEventListener('click', () => {
+              item.classList.toggle('open')
+            })
+          })
 
 
           
@@ -52,8 +125,20 @@ $(function () {
 
           up();
 
+          const header = document.querySelector(".header-box");
 
-           // Маска для Инпута
+          if (header) {
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 10) {
+                header.classList.add("header-bg");
+              } else {
+                header.classList.remove("header-bg");
+              }
+            });
+          }
+
+
+        // Маска для Инпута
         var element = document.getElementById('input-mask');
         var element1 = document.getElementById('input-mask1');
         var element2 = document.getElementById('input-mask2');

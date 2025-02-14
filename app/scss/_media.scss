@@ -1,0 +1,303 @@
+@media(max-width: 968px){
+    html{
+        font-size: 9px;
+    }
+    .heading-block,
+    .about-bottom,
+    .whom-block{
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .heading-block__content,
+    .about-bottom__content,
+    .whom-block__content,
+    .work-elem__content{
+        width: 100%;
+    }
+    .heading-block__content__title::before,
+    .heading-block__content__title::after,
+    .title h3::after,
+    .ready__title::before,
+    .video-block__center-title::before,
+    .video-block__center-title{
+        display: none;
+    }
+    .heading-block__img,
+    .whom-block__img{
+        margin: 0 auto;
+    }
+    .heading,
+    .about,
+    .how,
+    .work,
+    .ready,
+    .video,
+    .reviews{
+        padding: 40px 0;
+    }
+    .why{
+        padding: 0;
+    }
+    .about-bottom__img{
+        margin: 0 auto;
+        order: 1;
+    }
+    .work-elem{
+        background-image: unset;
+    }
+    .work-elem__content{
+        border-radius: 30px;
+    }
+    .why-block__item,
+    .price-block__item {
+        width: calc(100% / 2 - 40px);
+    }
+    .video-block__center-title--mobile{
+        margin-bottom: 20px;
+        display: block;
+    }
+    .price-block__item-text{
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+@media(max-width: 768px){
+    .heading-box__item,
+    .how-block__item,
+    .video-block__left,
+    .video-block__right,
+    .video-block__center,
+    .points-block__item{
+        width: 100%;
+    }
+    .about-top{
+        background-image: unset;
+    }
+    .about-top__content{
+        padding: 20px 30px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .how-block__item:nth-child(1),
+    .how-block__item:nth-child(2),
+    .how-block__item:nth-child(3),
+    .how-block__item:nth-child(4),
+    .video-block__item:nth-child(1),
+    .video-block__item:nth-child(2),
+    .video-block__item:nth-child(3),
+    .video-block__item:nth-child(4){
+        padding: 0;
+        background-image: unset;
+    }
+    .how-block__item:nth-child(2)::after,
+    .how-block__item:nth-child(4)::before,
+    .video-block__center::before{
+        display: none;
+    }
+    .how-block__wrapper{
+        padding: 15px;
+        border-radius: 30px;
+        height: auto;
+    }
+    .how-block__item-text{
+        margin-bottom: 0;
+    }
+    .video-block{
+        gap: 0;
+        flex-direction: column;
+    }
+    .video-block__item-wrapper{
+        border-radius: 30px;
+        display: block;
+        height: auto;
+    }
+    .footer-top{
+        gap: 10px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+@media(max-width: 550px){
+    .title h3,
+    .ready__title{
+        margin-bottom: 20px;
+        max-width: 100%;
+        font-size: 24px;
+    }
+    .subtitle,
+    .video-block__center-title--mobile{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .button,
+    .btn{
+        height: 50px;
+        line-height: 50px;
+        max-width: 100%;
+    }
+    .heading-block__content-subtitle,
+    .how__text,
+    .how-block__item-title{
+        font-size: 18px;
+    }
+    .heading-block__content-text,
+    .heading-box__item-text,
+    .about-top__content-text,
+    .about__text,
+    .whom-block__content-link,
+    .how__text,
+    .work-elem__content-text,
+    .work-elem__list-item,
+    .why__text,
+    .why-block__item-text,
+    .video-box__text,
+    .video-block__item-text,
+    .points-block__item-text,
+    .points__text,
+    .questions-accardion__title{
+        font-size: 16px;
+    }
+    .about__text,
+    .whom-block__content-text,
+    .whom-block__info,
+    .how__text,
+    .how-block,
+    .work-example,
+    .work-example__img img,
+    .work-block,
+    .work-box,
+    .why__text,
+    .video__link,
+    .video-block__item,
+    .price__text,
+    .price-block,
+    .points-block,
+    .points__btn{
+        margin-bottom: 20px;
+    }
+    .heading-block__img,
+    .about-bottom__img,
+    .whom-block__img,
+    .work-block__item,
+    .ready-form__btn,
+    .ready-form__input,
+    .why-block__item,
+    .price-block__item,
+    .reviews-slider__item,
+    .footer-top__social,
+    .footer-top__btn{
+        width: 100%;
+    }
+    .about-bottom__item-img,
+    .whom-block__item-img,
+    .work-block__item-img,
+    .why-block__item-img,
+    .price-block__item-img,
+    .points-block__item-img {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    .how__text,
+    .work-elem__content-text {
+        text-align: center;
+    }
+    .how-block,
+    .why-block,
+    .points-block{
+        gap: 20px;
+    }
+    .heading,
+    .work,
+    .price,
+    .questions{
+        padding: 0;
+    }
+    .heading-block__content__title{
+        margin-bottom: 20px;
+        font-size: 27px;
+    }
+    .heading-block__bottom,
+    .work-block{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .heading-box,
+    .work-box,
+    .work-example,
+    .work-elem__content,
+    .ready__inner,
+    .video-box,
+    .questions__wrapper{
+        padding: 15px;
+    }
+    .about-bottom__content-title{
+        font-size: 20px;
+    }
+    .how-block__item-number{
+        font-size: 30px;
+    }
+    .ready-form__input{
+        margin-bottom: 15px;
+        height: 55px;
+        line-height: 55px;
+    }
+    .why-box__item{
+        margin-bottom: 15px;
+        padding-left: 0px;
+        box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.28);
+    }
+    .video-box,
+    .video-slider{
+        margin-bottom: 40px;
+    }
+    .video__link-btn{
+        width: 70px;
+    }
+    .video-slider__item-img{
+        margin: 0 auto;
+    }
+    .points-block__item-title{
+        margin-bottom: 5px;
+    }
+    .reviews{
+        padding-bottom: 10px;
+    }
+    .points__text{
+        display: flex;
+        flex-direction: column;
+    }
+    .points__btn{
+        font-size: 14px;
+    }
+    .footer-top__languages{
+        display: none;
+    }
+    .footer-top__social{
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+    .footer-top__phone{
+        display: inline-block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .modal-form{
+        padding: 25px 15px;
+    }
+    .modal-form__input{
+        padding: 12px;
+    }
+}

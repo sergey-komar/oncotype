@@ -10,78 +10,92 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-top">
-        <a href="#" class="header-top__logo">
-          <img src="./images/home/logo.png" alt="img">
-        </a>
-        <form class="header-top__search">
-          <div class="header-top__search-box">
-            <input type="text" class="header-top__search-input" placeholder="Поиск">
-            <button class="header-top__search-btn">
-              <img src="./images/icon/search.svg" alt="img">
-            </button>
+    <div class="header-box">
+      <div class="container">
+        <div class="header-top">
+          <a href="#" class="header-top__logo">
+            <img src="./images/home/logo.png" alt="img">
+          </a>
+          <form class="header-top__search">
+            <div class="header-top__search-box">
+              <input type="text" class="header-top__search-input" placeholder="Поиск">
+              <button class="header-top__search-btn">
+                <img src="./images/icon/search.svg" alt="img">
+              </button>
+            </div>
+          </form>
+            
+          <div class="header-top__social">
+            <a href="#" class="header-top__social-link">
+              <img src="./images/icon/instagram.svg" alt="img">
+            </a>
+            <a href="#" class="header-top__social-link">
+              <img src="./images/icon/facebook.svg" alt="img">
+            </a>
+            <a href="#" class="header-top__social-link">
+              <img src="./images/icon/telegram.svg" alt="img">
+            </a>
           </div>
-        </form>
-          
-        <div class="header-top__social">
-          <a href="#" class="header-top__social-link">
-            <img src="./images/icon/instagram.svg" alt="img">
-          </a>
-          <a href="#" class="header-top__social-link">
-            <img src="./images/icon/facebook.svg" alt="img">
-          </a>
-          <a href="#" class="header-top__social-link">
-            <img src="./images/icon/telegram.svg" alt="img">
-          </a>
-        </div>
-
-        <a href="tel:87005420792" class="header-top__phone">8-700-542-0792</a>
-        <button class="header-top__btn btn">Заказать звонок</button>
-        <div class="header-top__languages">
-          <a href="#" class="header-top__languages-item header-top__languages-item--active">ru</a>
-          <a href="#" class="header-top__languages-item">en</a>
-          <a href="#" class="header-top__languages-item">kz</a>
+  
+          <a href="tel:87005420792" class="header-top__phone">8-700-542-0792</a>
+          <button class="header-top__btn btn btn-click">Заказать звонок</button>
+  
+          <div class="header-top__wrapper">
+            <div class="header-top__languages">
+              <a href="#" class="header-top__languages-item header-top__languages-item--active">ru</a>
+              <a href="#" class="header-top__languages-item">en</a>
+              <a href="#" class="header-top__languages-item">kz</a>
+            </div>
+            <div class="nav-icon">
+              <div class="nav-icon__middle"></div>
+            </div>
+          </div>
+        
         </div>
       </div>
+    </div>
+   
 
-      <div class="header-bottom">
+     <div class="header-bottom">
+      <div class="container">
         <nav class="menu">
           <ul class="menu__list">
             <li>
-              <a href="#">О тесте</a>
+              <a href="#about">О тесте</a>
             </li>
             <li>
-              <a href="#">Кому показан </a>
+              <a href="#whom">Кому показан </a>
             </li>
             <li>
-              <a href="#">Как проводится</a>
+              <a href="#how">Как проводится</a>
             </li>
             <li>
-              <a href="#">Результаты</a>
+              <a href="#work">Результаты</a>
             </li>
             <li>
-              <a href="#">Почему стоит пройти тест</a>
+              <a href="#why">Почему стоит пройти тест</a>
             </li>
             <li>
-              <a href="#">Научная основа</a>
+              <a href="#video">Научная основа</a>
             </li>
             <li>
-              <a href="#">Почему мы</a>
+              <a href="#box">Почему мы</a>
             </li>
             <li>
-              <a href="#">Стоимость</a>
+              <a href="#price">Стоимость</a>
             </li>
             <li>
-              <a href="#">Список клиник</a>
+              <a href="#points">Список клиник</a>
             </li>
             <li>
-              <a href="#">FAQ</a>
+              <a href="#questions">FAQ</a>
             </li>
           </ul>
         </nav>
       </div>
-    </div>
+      
+      </div> 
+   
   </header>
  
     <main class="main">
@@ -133,7 +147,7 @@
         </div>
       </section>
 
-      <section class="about">
+       <section class="about" id="about">
         <div class="container">
           <div class="about__title title">
             <h3>
@@ -147,7 +161,7 @@
           <div class="about__text">
             Тест Oncotype DX Breast Recurrence Score® — это геномное исследование, которое анализирует активность группы генов в опухолевой ткани. Этот тест помогает оценить вероятность рецидива заболевания и определить, насколько эффективной будет химиотерапия в сочетании с гормональной терапией.
           </div>
-          <div class="about-top" style="background-image: url('./images/home/about-img.jpg');">
+          <div class="about-top">
             <div class="about-top__content">
               <div class="about-top__content-text">
                 <span>Более 1 миллиона пациентов по всему миру</span>
@@ -199,7 +213,7 @@
         </div>
       </section>
 
-      <section class="whom">
+      <section class="whom" id="whom">
         <div class="container">
           <div class="whom__title title">
             <h3>Кому показан тест Oncotype DX?</h3>
@@ -253,7 +267,7 @@
         </div>
       </section>
 
-      <section class="how">
+      <section class="how" id="how">
         <div class="container">
           <div class="how__title title">
             <h3>Как проводится тест Oncotype DX?</h3>
@@ -263,7 +277,7 @@
             Исследование Oncotype DX выполняется на образце ткани рака молочной железы, который был удалён во время операции. Этот образец отправляется в специализированную лабораторию для детального анализа.
           </div>
           <div class="how-block">
-            <div class="how-block__item" style="background-image: url('./images/home/how-1.png');">
+            <div class="how-block__item">
               <div class="how-block__wrapper">
                 <div class="how-block__item-number">1</div>
                 <div class="how-block__item-title">Сбор образца ткани:</div>
@@ -272,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="how-block__item" style="background-image: url('./images/home/how-2.png');">
+            <div class="how-block__item">
               <div class="how-block__wrapper">
                 <div class="how-block__item-number">2</div>
                 <div class="how-block__item-title">Отправка в лабораторию в США:</div>
@@ -281,7 +295,7 @@
                 </div>
               </div>
             </div>
-            <div class="how-block__item" style="background-image: url('./images/home/how-3.png');">
+            <div class="how-block__item">
               <div class="how-block__wrapper">
                 <div class="how-block__item-number">4</div>
                 <div class="how-block__item-title">Результаты теста:</div>
@@ -290,7 +304,7 @@
                 </div>
               </div>
             </div>
-            <div class="how-block__item" style="background-image: url('./images/home/how-4.png');">
+            <div class="how-block__item">
               <div class="how-block__wrapper">
                 <div class="how-block__item-number">3</div>
                 <div class="how-block__item-title">Анализ генов:</div>
@@ -307,7 +321,7 @@
         </div>
       </section>
 
-      <section class="work">
+      <section class="work" id="work">
         <div class="container">
           <div class="work__title title">
             <h3>Как работает тест Oncotype DX?</h3>
@@ -356,7 +370,7 @@
             </div>
           </div>
 
-          <div class="work-elem" style="background-image: url('./images/home/work-images.png');">
+          <div class="work-elem">
             <div class="work-elem__content">
               <div class="work-elem__content-text">
                 На сегодняшний день тест Oncotype DX Breast Recurrence Score® помог многим пациентам:
@@ -397,7 +411,7 @@
         </div>
       </section>
 
-      <section class="why">
+      <section class="why" id="why">
         <div class="container">
           <div class="why__title title">
             <h3>Почему стоит пройти тест Oncotype DX?</h3>
@@ -473,7 +487,7 @@
         </div>
       </section>
 
-      <section class="video">
+      <section class="video" id="video">
         <div class="container">
           <div class="video__title title">
             <h3>
@@ -527,24 +541,24 @@
         </div>
        
         <div class="container">
-          <div class="video-box">
+          <div class="video-box" id="box">
             <div class="video-box__title">
               Тест Oncotype DX — это шаг к персонализированному подходу в лечении рака молочной железы. 
             </div>
             <div class="video-box__text">
               Обсудите возможность прохождения теста с вашим врачом, чтобы принять лучшее решение для вашего здоровья.
             </div>
-            <button class="video-box__btn button">Получить консультацию</button>
+            <button class="video-box__btn button btn-click">Получить консультацию</button>
           </div>
-
+          <div class="video-block__center-title video-block__center-title--mobile">Почему выбирают нас</div>
           <div class="video-block">
             <div class="video-block__left">
-              <div class="video-block__item" style="background-image: url('./images/home/video-1.png');">
+              <div class="video-block__item">
                 <div class="video-block__item-wrapper">
                   <div class="video-block__item-text">Точная оценка риска рецидива рака</div>
                 </div>
               </div>
-              <div class="video-block__item"  style="background-image: url('./images/home/video-2.png');">
+              <div class="video-block__item">
                 <div class="video-block__item-wrapper">
                   <div class="video-block__item-text">
                     Тест рекомендован ведущими международными клиническими гайдлайнами в области онкологии
@@ -556,14 +570,14 @@
               <div class="video-block__center-title">Почему выбирают нас</div>
             </div>
             <div class="video-block__right">
-              <div class="video-block__item"  style="background-image: url('./images/home/video-3.png');">
+              <div class="video-block__item">
                 <div class="video-block__item-wrapper">
                   <div class="video-block__item-text">
                     Оценка необходимости химиотерапии
                   </div>
                 </div>
               </div>
-              <div class="video-block__item"  style="background-image: url('./images/home/video-4.png');">
+              <div class="video-block__item">
                 <div class="video-block__item-wrapper">
                   <div class="video-block__item-text">
                     Результаты доступны через 14 дней
@@ -575,7 +589,7 @@
         </div>
       </section>
 
-      <section class="price">
+      <section class="price" id="price">
         <div class="container">
           <div class="price__title title">
             <h3>Стоимость теста Oncotype DX и варианты оплаты</h3>
@@ -617,7 +631,7 @@
             </div>
           </div>
 
-          <button class="price__btn btn">Узнать сколько стоит тест</button>
+          <button class="price__btn btn btn-click">Узнать сколько стоит тест</button>
         </div>
       </section>
 
@@ -700,7 +714,7 @@
         </div>
       </section>
 
-      <section class="points">
+      <section class="points" id="points">
         <div class="container">
           <div class="points__title title">
             <h3>Ближайшие пункты сдачи анализов</h3>
@@ -751,7 +765,7 @@
             </div>
           </div>
 
-          <button class="points__btn button">Записаться на тест онлайн за 1 минуту</button>
+          <button class="points__btn button btn-click">Записаться на тест онлайн за 1 минуту</button>
           <div class="points__text">
             Или позвоните по горячей линии: 
             <span>8-700-542-0792</span>
@@ -759,7 +773,7 @@
         </div>
       </section>
 
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="container">
           <div class="questions-top__title title">
             <h3>Часто задаваемые вопросы?</h3>
@@ -883,7 +897,7 @@
           </div>
   
           <a href="tel:87005420792" class="footer-top__phone">8-700-542-0792</a>
-          <button class="footer-top__btn btn">Заказать звонок</button>
+          <button class="footer-top__btn btn-click btn">Заказать звонок</button>
           <div class="footer-top__languages">
             <a href="#" class="footer-top__languages-item footer-top__languages-item--active">ru</a>
             <a href="#" class="footer-top__languages-item">en</a>
@@ -895,34 +909,34 @@
           <nav class="menu-footer">
             <ul class="menu__list-footer">
               <li>
-                <a href="#">О тесте</a>
+                <a href="#about">О тесте</a>
               </li>
               <li>
-                <a href="#">Кому показан </a>
+                <a href="#whom">Кому показан </a>
               </li>
               <li>
-                <a href="#">Как проводится</a>
+                <a href="#how">Как проводится</a>
               </li>
               <li>
-                <a href="#">Результаты</a>
+                <a href="#work">Результаты</a>
               </li>
               <li>
-                <a href="#">Почему стоит пройти тест</a>
+                <a href="#why">Почему стоит пройти тест</a>
               </li>
               <li>
-                <a href="#">Научная основа</a>
+                <a href="#video">Научная основа</a>
               </li>
               <li>
-                <a href="#">Почему мы</a>
+                <a href="#box">Почему мы</a>
               </li>
               <li>
-                <a href="#">Стоимость</a>
+                <a href="#price">Стоимость</a>
               </li>
               <li>
-                <a href="#">Список клиник</a>
+                <a href="#points">Список клиник</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a href="#questions">FAQ</a>
               </li>
             </ul>
           </nav>
@@ -930,7 +944,7 @@
 
         <div class="footer__text">© 2025 н. Все права защищены</div>
       </div>
-    </footer>
+    </footer> 
   
 
     <div class="modal">

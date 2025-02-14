@@ -11,7 +11,7 @@ body {
 	font-size: 16px;
 	line-height: 1.4;
 	background: url('../images/home/bg.jpg') no-repeat;
-	background-size: cover;
+	// background-size: cover;
  }
 html{
 	font-size: 10px;
@@ -52,6 +52,7 @@ button:hover,
 .btn{
 	display: block;
 	width: 100%;
+	padding: 0;
 	border-radius: 20px;
 	text-align: center;
 	background-color:  #f3e825;
@@ -63,6 +64,7 @@ button:hover,
 	color: #fff;
 }
 .button{
+	padding: 0;
 	display: block;
 	width: 100%;
 	text-align: center;
